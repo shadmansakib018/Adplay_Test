@@ -1,8 +1,11 @@
 def TypeCheck(str):
-	val = ord(str[0])
-	if(val>=48 and val<=57):
-		print("Number")
-	else:
-		print("String")
+	type = 'String'
+	for ch in str:
+		val = ord(ch)
+		if(val>=48 and val<=57):
+			type = "Number"
+		else:
+			return "String"
+	return type
 
-TypeCheck('45')
+print(TypeCheck('!5657577009a'))
