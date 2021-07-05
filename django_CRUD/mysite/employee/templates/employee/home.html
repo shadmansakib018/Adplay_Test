@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Employees</title>
+</head>
+<body>
+	<h1>Employee List</h1>
+	<button><a href="{% url 'emp-create' %}">Add new employee</a></button>
+	{% for employee in employees %}
+		<h4><li><a href="{% url 'details' employee.id %}">{{ employee.EmpName }}</a></li></h4>
+
+	{% endfor %}
+
+</body>
+</html>

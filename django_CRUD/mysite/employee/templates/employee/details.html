@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ employee.EmpName }}</title>
+</head>
+<body>
+	<h1>Employee Details</h1>
+	<h4>Name: {{ employee.EmpName }}</h4>
+	<h4>Age: {{ employee.Age }}</h4>
+	<h4>Salary: {{ employee.Salary }}</h4>
+	<br><br>
+	<button><a href="{% url 'emp-update' employee.id %}">Update</a></button>
+	<button><a href="{% url 'emp-delete' employee.id %}">Delete</a></button>
+
+	
+</body>
+</html>
