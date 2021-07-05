@@ -1,0 +1,4 @@
+SELECT Name, Branch, S_code, Marks, P_code
+FROM Student
+JOIN Exam
+ON Student.Rollno = Exam.Rollno;
